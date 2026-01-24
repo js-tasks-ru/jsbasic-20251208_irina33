@@ -10,7 +10,8 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  const minLength = 4;
+  return Boolean(name) && name.length >= minLength && !name.includes(' ');
 }
 
 function sayHello() {
