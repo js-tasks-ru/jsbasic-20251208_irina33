@@ -1,3 +1,3 @@
 function filterRange(arr, a, b) {
-  // ваш код...
+  return arr.filter(elem => elem >= Math.min(a, b) && elem <= Math.max(a, b));
 }
